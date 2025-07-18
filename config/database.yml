@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: wolo
+  host: localhost
+
+development:
+  <<: *default
+  database: marketplace_development
+
+test:
+  <<: *default
+  database: marketplace_test
+
+
+production:
+  <<: *default
+  host: localhost  # or your actual DB server
+  database: marketplace_production
+  username: marketplace
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  port: 5432
