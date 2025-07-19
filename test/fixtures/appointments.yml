@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  serviceable: one
+  serviceable_type: Serviceable
+  start_time: 2025-07-19 00:10:28
+  end_time: 2025-07-19 00:10:28
+  status: MyString
+  notes: MyText
+
+two:
+  user: two
+  serviceable: two
+  serviceable_type: Serviceable
+  start_time: 2025-07-19 00:10:28
+  end_time: 2025-07-19 00:10:28
+  status: MyString
+  notes: MyText

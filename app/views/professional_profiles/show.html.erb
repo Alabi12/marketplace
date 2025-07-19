@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @professional_profile %>
+
+<div>
+  <%= link_to "Edit this professional profile", edit_professional_profile_path(@professional_profile) %> |
+  <%= link_to "Back to professional profiles", professional_profiles_path %>
+
+  <%= button_to "Destroy this professional profile", @professional_profile, method: :delete %>
+</div>

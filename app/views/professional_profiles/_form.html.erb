@@ -1,0 +1,32 @@
+<%= form_with(model: professional_profile) do |form| %>
+  <% if professional_profile.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(professional_profile.errors.count, "error") %> prohibited this professional_profile from being saved:</h2>
+
+      <ul>
+        <% professional_profile.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :bio, style: "display: block" %>
+    <%= form.textarea :bio %>
+  </div>
+
+  <div>
+    <%= form.label :specialties, style: "display: block" %>
+    <%= form.textarea :specialties %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,12 @@
+<% content_for :title, "Editing skilled professional profile" %>
+
+<h1>Editing skilled professional profile</h1>
+
+<%= render "form", skilled_professional_profile: @skilled_professional_profile %>
+
+<br>
+
+<div>
+  <%= link_to "Show this skilled professional profile", @skilled_professional_profile %> |
+  <%= link_to "Back to skilled professional profiles", skilled_professional_profiles_path %>
+</div>

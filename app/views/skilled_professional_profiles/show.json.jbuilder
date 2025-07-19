@@ -1,0 +1,1 @@
+json.partial! "skilled_professional_profiles/skilled_professional_profile", skilled_professional_profile: @skilled_professional_profile

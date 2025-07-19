@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @skill_service %>
+
+<div>
+  <%= link_to "Edit this skill service", edit_skill_service_path(@skill_service) %> |
+  <%= link_to "Back to skill services", skill_services_path %>
+
+  <%= button_to "Destroy this skill service", @skill_service, method: :delete %>
+</div>

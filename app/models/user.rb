@@ -5,14 +5,14 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          class User < ApplicationRecord
 
-    enum role: {
-      customer: 0,
-      store_owner: 1,
-      professional: 2,
-      business_owner: 3,
-      skilled_professional: 4,
-      admin: 5
-    }
+   enum :role, {
+    customer: 0,
+    store_owner: 1,
+    professional: 2,
+    business_owner: 3,
+    skilled_professional: 4,
+    admin: 5
+  }, default: :customer
 
     after_initialize :set_default_role, if: :new_record?
 
