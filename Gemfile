@@ -61,3 +61,21 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Authentication
+gem "devise"
+gem "devise-i18n"
+
+# Authorization
+gem "pundit"
+
+# Calendar and scheduling
+gem "simple_calendar"
+gem "ice_cube"
+gem "fullcalendar-rails"
+gem "momentjs-rails"
+
+# Other utilities
+gem "friendly_id"
+gem "acts_as_list"
+gem "aasm" # for state machines
