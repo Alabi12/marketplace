@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Skill services" %>
+
+<h1>Skill services</h1>
+
+<div id="skill_services">
+  <% @skill_services.each do |skill_service| %>
+    <%= render skill_service %>
+    <p>
+      <%= link_to "Show this skill service", skill_service %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New skill service", new_skill_service_path %>

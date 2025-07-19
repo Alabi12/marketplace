@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Business consulting profiles" %>
+
+<h1>Business consulting profiles</h1>
+
+<div id="business_consulting_profiles">
+  <% @business_consulting_profiles.each do |business_consulting_profile| %>
+    <%= render business_consulting_profile %>
+    <p>
+      <%= link_to "Show this business consulting profile", business_consulting_profile %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New business consulting profile", new_business_consulting_profile_path %>

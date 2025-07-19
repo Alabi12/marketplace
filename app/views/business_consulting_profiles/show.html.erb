@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @business_consulting_profile %>
+
+<div>
+  <%= link_to "Edit this business consulting profile", edit_business_consulting_profile_path(@business_consulting_profile) %> |
+  <%= link_to "Back to business consulting profiles", business_consulting_profiles_path %>
+
+  <%= button_to "Destroy this business consulting profile", @business_consulting_profile, method: :delete %>
+</div>

@@ -1,0 +1,12 @@
+<% content_for :title, "Editing business consulting profile" %>
+
+<h1>Editing business consulting profile</h1>
+
+<%= render "form", business_consulting_profile: @business_consulting_profile %>
+
+<br>
+
+<div>
+  <%= link_to "Show this business consulting profile", @business_consulting_profile %> |
+  <%= link_to "Back to business consulting profiles", business_consulting_profiles_path %>
+</div>
